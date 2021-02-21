@@ -1,0 +1,61 @@
+* { 
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px white;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(80, 80, 80);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(43, 42, 42);
+}
+
+
+body{
+    height: 160vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 90px 1fr 18px;
+    grid-template-areas: "header" "main" "footer";
+}
+
+
+.wrapper{
+    background-color: rgb(154, 203, 207);
+    border-top: 5px solid rgb(42, 115, 175);
+}
+
+.title{
+    float: left;
+    font-size: 1.2rem;
+}
+.atitle{
+    position:absolute; 
+    top: 25px; left: 90px;
+    font-weight: 750;
+    font-size: 2.0rem;
+    text-decoration: none;
+    color: rgb(7, 64, 117);
+}
+
+.topdiv{
+    position: absolute;
+    left: 90%;
+}
+.dpdwndiv{
+    position: absolute;
+    left: 80%;
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,15 @@
+.footer{
+    grid-area: footer;
+    background-color:rgb(42, 115, 175);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer2 {
+    color: black;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    right: 10px;
+}
