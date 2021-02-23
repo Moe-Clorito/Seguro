@@ -1,15 +1,35 @@
-.footer{
+.footer {
     grid-area: footer;
     background-color:rgb(42, 115, 175);
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
-.footer2 {
-    color: black;
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-decoration: none;
+.footerinfo {
+    font-size: 0.80rem;
+    font-weight: 500;
     position: relative;
     right: 10px;
+}
+.footerul {
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+.fname {
+    position: relative;
+    bottom: 30px;
+}
+.fsusep {
+    position: relative;
+    bottom: 10px; left: 25%;
+}
+.suseplink {
+    text-decoration: none;
+    color: rgb(69, 0, 160);
+}
+.flogo {
+    position: relative;
+    justify-content: center;
+    font-weight: bold;
+    left: 150px; top: 30px;
 }
