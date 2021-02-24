@@ -22,7 +22,7 @@
 .dropbtn{
     color: rgb(0, 0, 0);
     position: relative;
-    top: 30px;
+    top: 55px; right: 160px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -30,7 +30,7 @@
 .dropdown-content1{
     display: none;
     position: absolute;
-    left: 50%; top: 48px;
+    top: 75px; right: 35px;
     background-color: #f1f1f1;
     min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgb(78, 78, 78);
@@ -53,7 +53,7 @@
 .dropbtn1{
     color: rgb(0, 0, 0);
     position:absolute;
-    left: 130%; top: 30px;
+    top: 55px; right: 25px;
     font-size: 16px;
     border: none;
     cursor: pointer;
