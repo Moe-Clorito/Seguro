@@ -1,9 +1,17 @@
+
+@import url("footer.css");
+@import url("dropdown.css");
+@import url("slideshow.css");
+@import url("scripts/slideshow.script");
+
+
 * { 
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif, Helvetica;
     box-sizing: border-box;
 }
 
-/* scrollbar design */
+/* others
+-----------------------------------------------------------------------------------------------------------------*/
 
 ::-webkit-scrollbar{
     width: 8px;
@@ -26,15 +34,22 @@ body{
     margin: 0px;
     display: grid;
     grid-template-rows: 120px 1fr 140px;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: 
+    "header" "main" "footer";
 }
 
-
+/* wrapper 
+-----------------------------------------------------------------------------------------------------------------*/
 .wrapper{
     background-color: rgb(154, 203, 207);
-    border-top: 5px solid rgb(42, 115, 175);
-    position: fixed;
+    border-bottom: 4px solid rgba(114, 150, 153, 0.788);
+    position: absolute;
     width: 100%;
+}
+
+.atitle, .faleconoscoa, .dropbtn{
+    text-decoration: none;
+    list-style: none;
 }
 
 .title{
@@ -43,15 +58,13 @@ body{
     text-align: center;
 }
 .atitle{
-    left: 90px;
+    left: 390px; bottom: 5px;
     position: relative; 
     font-weight: 750;
     font-size: 2.0rem;
-    text-decoration: none;
     color: rgb(7, 64, 117);
 }
 
- /* dropdown */
 
 .dpdwndiv{
     position: absolute;
@@ -61,12 +74,15 @@ body{
 .faleconoscoa{
     float: right;
     position: relative;
-    right: 10px;
+    right: 20px; top: 15px;
     text-decoration: none;
     text-align: center;
     font-size: 1rem;
     color: black;
 }
+
+/* main 
+-----------------------------------------------------------------------------------------------------------------*/
 
 .main{
     grid-area: main;

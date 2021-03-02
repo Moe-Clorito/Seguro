@@ -4,63 +4,98 @@
         <title>Coutinho Seguros</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/index.css">
-        <link rel="stylesheet" href="assets/css/dropdown.css">
-        <link rel="stylesheet" href="assets/css/footer.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/layout.css">
 
     </head>
 
 
     <body>
 
-        <div id="wrapper" class="wrapper">
-
-            <header id="header" class="header">
-
+        <div class="wrapper">
+            <header class="header">
+                
                 <div class="title">
                     <h1>
                         <a href="index.html" class="atitle">Coutinho Seguros</a>
                     </h1>
                 </div>
-
-                <div class="dpdwndiv">
-
-                    <div class="dpdwndiv1">
-                        <nav class="dropbtn">Teste</nav>
-                        <div class="dropdown-content1">
-                            <a href="">test1</a>
-                            <a href="">test2</a>
-                            <a href="">test3</a>
-                        </div>
-                    </div>
-
-                    <div class="dpdwndiv2">
-                        <nav class="dropbtn1">Teste</nav>
-                        <div class="dropdown-content2">
-                            <a href="">test1</a>
-                            <a href="">test2</a>
-                            <a href="">test3</a>
-                        </div>
-                    </div>
-
+    
+                
+                <div class="faleconosco">
+                    <a class="faleconoscoa" href="faleconosco.html">Fale Conosco</a>
                 </div>
-
-            </header>
-
-            <div class="faleconosco">
-                <a class="faleconoscoa" href="faleconosco.html">Fale Conosco</a>
-            </div>
-                            
-
+            
+                
+                
+                <div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Sobre
+                            <i></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="">test1</a>
+                            <a href="">test2</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </header>  
         </div>
+
+        <div class="slideshow-container">
+
+            <div class="slides fade">
+                <img src="assets/images/seguro-de-vida.png" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="" width="100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="" width="100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <br>
+
+
+<!--------------- slideshow script ---------------->
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+            slides[slideIndex-1].style.display = "block";
+            }
+        </script>
+
+<!------------------------------------------------->
+
 
         <main class="main">
 
             <div class="container">
                 <ul>
                     <p class="segcontainer">
-                        
+                        Nossos Corretores:
                     </p>
                 </ul>
             </div>
